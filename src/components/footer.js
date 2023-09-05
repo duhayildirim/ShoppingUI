@@ -29,10 +29,10 @@ function Footer() {
                                             <div className="widget_menu">
                                                 <h3>Menu</h3>
                                                 <ul>
-                                                    <li><a href="#">Home</a></li>
-                                                    <li><a href="#">About</a></li>
-                                                    <li><a href="#">Services</a></li>
-                                                    <li><a href="#">Testimonial</a></li>
+                                                    <li><Link to="/">Home</Link></li>
+                                                    <li><Link to="/products">Products</Link></li>
+                                                    <li><Link to="/contact">Contact</Link></li>
+                                                    <li><Link to="/cart">Cart</Link></li>
                                                 </ul>
                                             </div>
                                         </div>
