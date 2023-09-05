@@ -3,7 +3,7 @@ import { useCart } from "../components/cart";
 function Cart() {
 
    const products = useCart(state => state.products)
-   const total = useCart(state => state.count)
+   const remove = useCart(state => state.remove)
 
    return (
       <div>
@@ -48,7 +48,9 @@ function Cart() {
                                                 <span class="d-block ml-5 font-weight-bold">
                                                    ${product.price}
                                                 </span>
-                                                <i class="fa fa-trash-o ml-3 text-black-50"></i>
+                                                <a href="#" onClick={() => remove(product.id)} >
+                                                  <i className="fa fa-trash-o mt-1 ml-3 text-black-50 flrg"></i>
+                                                </a>
                                              </div>
                                           </div>
                                        ))

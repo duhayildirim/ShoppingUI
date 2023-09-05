@@ -46,7 +46,9 @@ function Footer() {
                                         </div>
                                         <Link to="/products">
                                             <div className="btnbox">
-                                                Search
+                                                <Link to="/products">
+                                                    Search
+                                                </Link>
                                             </div>
                                         </Link>
                                     </div>
@@ -58,7 +60,7 @@ function Footer() {
             </footer>
             <div className="cpy_">
                 <p className="mx-auto">
-                    Coded By <a href="https://github.com/duhayildirim" target="_blank">Duha Yildirim</a> © 2023  
+                    Coded By <a href="https://github.com/duhayildirim" target="_blank">Duha Yildirim</a> © 2023
                 </p>
             </div>
         </div>
