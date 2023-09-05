@@ -7,7 +7,7 @@ function Navbar() {
     const products = useCart(state => state.products)
 
     const remove = useCart(state => state.remove)
-    console.log(products)
+
     return (
         <div>
             <div className="hero_area">

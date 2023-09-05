@@ -7,6 +7,7 @@ import { useCart } from "../components/cart";
 function Products() {
 
     const [data, setData] = useState([])
+    const [result, setResult] = useState(data)
 
     const addCart = useCart(store => store.addCart)
 
@@ -32,12 +33,20 @@ function Products() {
             return response.json()
         }).then((data) => {
             setData(data)
+            setResult(data)
         })
     }
 
     useEffect(() => {
         getData()
+        setResult(data)
     }, [])
+
+
+
+    const filter = (event) => {
+        setResult(data.filter(f => f.title.toLowerCase().includes(event.target.value)))
+    }
 
     return (
         <div>
@@ -52,7 +61,7 @@ function Products() {
                                     </div>
                                     <p>Detailed search among products</p>
                                     <form action="">
-                                        <input type="email" placeholder="Product Name" />
+                                        <input type="search" placeholder="Product Name" onChange={filter} />
                                     </form>
                                 </div>
                             </div>
@@ -64,7 +73,7 @@ function Products() {
                 <div className="container">
                     <div className="row">
                         {
-                            data.length > 0 && data.map((product, key) => {
+                            data.length > 0 && result.map((product, key) => {
                                 return (
                                     <div className="col-sm-6 col-md-4 col-lg-4" key={key}>
                                         <div className="box">

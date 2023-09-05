@@ -22,7 +22,6 @@ function App() {
         </Switch>
         <Footer></Footer>
       </BrowserRouter>
-
     </>
   );
 }
