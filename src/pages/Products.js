@@ -45,7 +45,7 @@ function Products() {
 
 
     const filter = (event) => {
-        setResult(data.filter(f => f.title.toLowerCase().includes(event.target.value)))
+        setResult(data.filter(f => f.title.toLowerCase().includes(event.target.value.toLowerCase())))
     }
 
     return (
@@ -82,6 +82,12 @@ function Products() {
                                                     <a href="#" onClick={() => submit(product.id)} className="option1">
                                                         Add To Cart
                                                     </a>
+                                                    <Link to={{
+                                                        pathname: "/detail",
+                                                        state: {stateParam: product.id}
+                                                    }} className="option2">
+                                                        Detail
+                                                    </Link>
                                                 </div>
                                             </div>
                                             <div className="img-box">

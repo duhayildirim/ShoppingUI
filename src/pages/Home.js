@@ -81,6 +81,12 @@ function Home() {
                                                     <a href="#" onClick={() => submit(product.id)} className="option1">
                                                         Add To Cart
                                                     </a>
+                                                    <Link to={{
+                                                        pathname: "/detail",
+                                                        state: {stateParam: product.id}
+                                                    }} className="option2">
+                                                        Detail
+                                                    </Link>
                                                 </div>
                                             </div>
                                             <div className="img-box">
