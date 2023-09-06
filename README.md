@@ -8,7 +8,7 @@
   </p>
 </div>
 
-You can view it in vercel: [deployment]([https://vercel.com/duhayildirim/shopping-ui](https://vercel.com/duhayildirim/shopping-ui))
+You can view it in vercel: <a href="https://shopping-ui-alpha.vercel.app/" target="_blank"> Deployment </a>
 
 ### `npm start` is sufficient to execute the project
 
