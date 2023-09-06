@@ -8,7 +8,7 @@
   </p>
 </div>
 
-You can view it in vercel: [deployment](https://facebook.github.io/create-react-app/docs/deployment)
+You can view it in vercel: [deployment]([https://vercel.com/duhayildirim/shopping-ui](https://vercel.com/duhayildirim/shopping-ui))
 
 ### `npm start` is sufficient to execute the project
 
